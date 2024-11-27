@@ -9,7 +9,7 @@ $ make install
 $ sudo mknod -m 666 /dev/zakki c $(cat /proc/devices | grep zakki | cut -d ' ' -f 1) 0
 
 # test
-$ echo 0 > /dev/zakki
+$ cat /dev/zakki
 $ sudo dmesg | tail
 
 # uninstall device driver
